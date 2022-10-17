@@ -33,7 +33,23 @@ public class Druide {
 		} else {
 			parler(" Je n'ai pas trouvé tous les ingrédients, ma potion est  seulement de force " + forcePotion);
 		}
+	public void booster(Gaulois nom , int effetPotion) {
+		if (nom.getNom() == "Obelix") {
+			parler("Non, Obélix !... Tu n’auras pas de potion magique !");
+			nom.parler(" Par Bélénos, ce n'est pas juste !");
+		}
+		else {
+			nom.boirePotion(effetPotion);
+		}
 		
+	}
+	public static void main(String[] args) { 
+		Druide panoramix = new Druide("Panoramix",5,10);
+		Gaulois axterix = new Gaulois("Axtérix",8);
+		axterix.booster(axterix,3);
+			
+			
+	}
 	}
 	//
 }
