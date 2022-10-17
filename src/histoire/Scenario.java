@@ -1,24 +1,26 @@
 package histoire;
-
-import personnages.Gaulois;
-import personnages.Romain;
-import personnages.Druide;
-
+////import personnage.Gaulois;
+////import personnage.Druide;
+////import personnage.Romain;
+//
 public class Scenario {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Gaulois axterix = new Gaulois("Axtérix",10);
-		Romain minus = new Romain("Minus",8);
-		Druide panoramix = new Druide("panoramix",5,10);
-		panoramix.preparePotion();
-		axterix.parler("Bonjour à tous");
-		minus.parler("UN GAU... UNGAUGAU...");
-		axterix.frapper(minus);
-		axterix.frapper(minus);
-		axterix.frapper(minus);
-		
-		//
-	}
-
+////	public static void main(String[] args) {
+////		Romain minus = new Romain("Minus", 6);
+////		Gaulois asterix = new Gaulois("Astérix", 8);
+////		Gaulois obelix = new Gaulois("Obélix",9);
+////		Druide panoramix = new Druide("Panoramix", 5, 10);
+////		
+////		
+////		panoramix.parler("Je vais aller préparer une petite potion ...");
+////		panoramix.preparerPotion();
+////		panoramix.booster(obelix);
+////		obelix.parler("Par Bélénos, ce n'est pas juste !");
+////		asterix.prendreParole();
+////		asterix.boirePotion(panoramix.preparerPotion());
+////		asterix.parler("Bonjour");
+////		minus.parler("UN GAU... UN GAUGAU...");
+////		asterix.frapper(minus);
+////		asterix.frapper(minus);
+////		asterix.frapper(minus);
+////	}
 }
