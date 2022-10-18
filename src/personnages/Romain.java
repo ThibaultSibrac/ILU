@@ -38,18 +38,21 @@ public class Romain {
 //	}
 
 	public Equipement[] recevoirCoup(int forceCoup) {
+		if (force < 0) {
+			System.out.println("Le romain est déja à terre");
+		}
 		Equipement[] equipementEjecte = null;
 		// précondition
 		assert force > 0;
 		int oldForce = force;
 		forceCoup = CalculResistanceEquipement(forceCoup);
 		force -= forceCoup;
+		if (force > 0) {
 			parler("Aïe");
 		} else {
 			equipementEjecte = ejecterEquipement();
 			parler("J'abandonne...");
 		}
-
 		// post condition la force à diminuer
 		assert force < oldForce;
 		return equipementEjecte;
