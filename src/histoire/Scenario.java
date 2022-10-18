@@ -21,9 +21,11 @@ public class Scenario {
 		panoramix.booster(obelix);
 		obelix.parler("Par Bélénos, ce n'est pas juste !");
 		asterix.prendreParole();
-		asterix.boirePotion(panoramix.preparePotion());
+		panoramix.booster(asterix);
 		asterix.parler("Bonjour");
 		minus.parler("UN GAU... UN GAUGAU...");
 		asterix.frapper(minus);
+		asterix.frapper(minus);
+
 	}
 }

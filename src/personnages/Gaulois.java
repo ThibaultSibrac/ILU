@@ -55,9 +55,10 @@ public class Gaulois {
 		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
 	}
 
-	public void boirePotion(int effetPotion) {
-		if (effetPotion == 3) {
-			System.out.println("« Merci Druide, je sens que ma force est 3 fois décuplée. ");
+	public void boirePotion(int forcePotion) {
+		effetPotion = forcePotion;
+		{
+			System.out.println("« Merci Druide, je sens que ma force est " + forcePotion + " fois décuplée. ");
 		}
 
 	}
