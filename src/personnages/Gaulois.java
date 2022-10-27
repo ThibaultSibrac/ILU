@@ -1,4 +1,5 @@
 package personnages;
+import lieu.Musee;
 
 public class Gaulois {
 	private int force;
@@ -10,6 +11,10 @@ public class Gaulois {
 	public Gaulois(String nom, int force) {
 		this.nom = nom;
 		this.force = force;
+	}
+	
+	public int getForce() {
+		return force;
 	}
 
 	public String getNom() {
@@ -62,6 +67,26 @@ public class Gaulois {
 		}
 
 	}
+	
+	public void faireUneDonnation(Musee musee) {
+		if(nb_trophees > 0) {
+			System.out.println(" « Je donne au musee tous mes trophees :");
+			for(int i = 0; i < nb_trophees; i++ ) {
+				if(i == nb_trophees-1) {
+					//musee.getReserve()[musee.getNbTrophee()].getGaulois()
+					musee.donnerTrophees(this, trophees[i]);
+					System.out.println("- " + trophees[i] + " »");
+				}
+				else {
+					musee.donnerTrophees(this, trophees[i]);
+					System.out.println("- " + trophees[i]);
+				}
+			}
+		}
+		
+	}
+	
+	
 
 	public static void main(String[] args) {
 		Gaulois axterix = new Gaulois("Axtérix", 8);
